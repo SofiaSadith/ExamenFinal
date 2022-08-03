@@ -13,5 +13,6 @@ public class Auto {
     public static void main(String[] args){
         System.out.println("Hi mundo");
         System.out.println("desde netbeans");
+        System.out.println("desde netbeans 2do intento");
     }
 }

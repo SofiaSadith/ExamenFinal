@@ -9,7 +9,6 @@ package models;
  * @author Sofia Poma
  */
 public interface Stereo {
-    
     int getNumUsb();
     int getNumParlantes();
     boolean isKaraoke();

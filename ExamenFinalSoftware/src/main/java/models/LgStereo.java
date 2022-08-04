@@ -27,18 +27,22 @@ public class LgStereo extends Electrodomestico implements Stereo{
         
     }
     
+    @Override
    public int getNumUsb(){
        return numUsb;
    } 
    
-   public int getNumParlante(){
+    @Override
+   public int getNumParlantes(){
        return numParlantes;
    }
    
+    @Override
    public boolean isKaraoke(){
        return karaoke;
    }
    
+    @Override
    public boolean isEcualizador(){
        return ecualizador;
    }

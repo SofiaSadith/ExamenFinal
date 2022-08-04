@@ -24,14 +24,17 @@ public class LgTelevisor extends Electrodomestico implements Televisor{
         this.controlVoz = controlVoz;
     }
     
+    @Override
    public boolean isBluetooth(){
        return bluetooth;
    } 
    
+    @Override
    public boolean isWifi(){
        return wifi;
    }
    
+    @Override
    public boolean isControlVoz(){
        return controlVoz;
    }

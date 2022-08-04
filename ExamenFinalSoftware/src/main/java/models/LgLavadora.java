@@ -4,6 +4,8 @@
  */
 package models;
 
+import states.BrokenState;
+
 /**
  *
  * @author Sebas
@@ -21,6 +23,7 @@ public class LgLavadora extends Lavadora{
         this.capacidad = capacidad;
         this.panel = panel;
         this.numProgramas = numProgramas;
+        this.state=new BrokenState(this);
     }
 
 

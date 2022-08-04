@@ -4,7 +4,7 @@
  */
 package models;
 
-import states.LavadoraState;
+import states.State;
 
 /**
  *
@@ -17,9 +17,5 @@ public abstract class Lavadora extends Electrodomestico{
     abstract double getCapacidad();
     abstract boolean isPanel();
     abstract int getNumProgramas();
-    private LavadoraState state;
-    
-    public void cambiarState(LavadoraState state){
-        this.state=state;
-    }
+
 }

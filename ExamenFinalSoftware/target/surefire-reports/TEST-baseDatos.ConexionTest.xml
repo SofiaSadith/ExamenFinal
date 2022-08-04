@@ -1,62 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="baseDatos.ConexionTest" time="0.239" tests="2" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="baseDatos.ConexionTest" time="0.385" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="15"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="C:\Users\Sebas\OneDrive\Escritorio\UNI\2022-1\SOFTWARE 2\final\ExamenFinal\ExamenFinalSoftware\target\test-classes;C:\Users\Sebas\OneDrive\Escritorio\UNI\2022-1\SOFTWARE 2\final\ExamenFinal\ExamenFinalSoftware\target\classes;C:\Users\Sebas\.m2\repository\mysql\mysql-connector-java\8.0.30\mysql-connector-java-8.0.30.jar;C:\Users\Sebas\.m2\repository\com\google\protobuf\protobuf-java\3.19.4\protobuf-java-3.19.4.jar;C:\Users\Sebas\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.6.0\junit-jupiter-api-5.6.0.jar;C:\Users\Sebas\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\Sebas\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Sebas\.m2\repository\org\junit\platform\junit-platform-commons\1.6.0\junit-platform-commons-1.6.0.jar;C:\Users\Sebas\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.6.0\junit-jupiter-params-5.6.0.jar;C:\Users\Sebas\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.6.0\junit-jupiter-engine-5.6.0.jar;C:\Users\Sebas\.m2\repository\org\junit\platform\junit-platform-engine\1.6.0\junit-platform-engine-1.6.0.jar;"/>
+    <property name="java.class.path" value="D:\SoftawareFinal\ExamenFinal\ExamenFinalSoftware\target\test-classes;D:\SoftawareFinal\ExamenFinal\ExamenFinalSoftware\target\classes;C:\Users\Sofia Poma\.m2\repository\mysql\mysql-connector-java\8.0.30\mysql-connector-java-8.0.30.jar;C:\Users\Sofia Poma\.m2\repository\com\google\protobuf\protobuf-java\3.19.4\protobuf-java-3.19.4.jar;C:\Users\Sofia Poma\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.6.0\junit-jupiter-api-5.6.0.jar;C:\Users\Sofia Poma\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\Sofia Poma\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Sofia Poma\.m2\repository\org\junit\platform\junit-platform-commons\1.6.0\junit-platform-commons-1.6.0.jar;C:\Users\Sofia Poma\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.6.0\junit-jupiter-params-5.6.0.jar;C:\Users\Sofia Poma\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.6.0\junit-jupiter-engine-5.6.0.jar;C:\Users\Sofia Poma\.m2\repository\org\junit\platform\junit-platform-engine\1.6.0\junit-platform-engine-1.6.0.jar;"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
     <property name="java.vendor.url" value="https://java.oracle.com/"/>
-    <property name="user.timezone" value="America/Bogota"/>
+    <property name="user.timezone" value="America/Lima"/>
     <property name="os.name" value="Windows 10"/>
     <property name="java.vm.specification.version" value="15"/>
     <property name="user.country" value="PE"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-15.0.2\bin"/>
-    <property name="sun.java.command" value="C:\Users\Sebas\AppData\Local\Temp\surefire15257096019146313268\surefirebooter14345015479527572774.jar C:\Users\Sebas\AppData\Local\Temp\surefire15257096019146313268 2022-08-04T02-42-19_853-jvmRun1 surefire11636530603055573202tmp surefire_0307829444003298682tmp"/>
+    <property name="sun.java.command" value="C:\Users\SOFIAP~1\AppData\Local\Temp\surefire12666073835086400023\surefirebooter7855175106737919982.jar C:\Users\Sofia Poma\AppData\Local\Temp\surefire12666073835086400023 2022-08-04T06-54-59_045-jvmRun1 surefire10377235279191058943tmp surefire_0973095019950324694tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="test" value="baseDatos.ConexionTest"/>
-    <property name="surefire.test.class.path" value="C:\Users\Sebas\OneDrive\Escritorio\UNI\2022-1\SOFTWARE 2\final\ExamenFinal\ExamenFinalSoftware\target\test-classes;C:\Users\Sebas\OneDrive\Escritorio\UNI\2022-1\SOFTWARE 2\final\ExamenFinal\ExamenFinalSoftware\target\classes;C:\Users\Sebas\.m2\repository\mysql\mysql-connector-java\8.0.30\mysql-connector-java-8.0.30.jar;C:\Users\Sebas\.m2\repository\com\google\protobuf\protobuf-java\3.19.4\protobuf-java-3.19.4.jar;C:\Users\Sebas\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.6.0\junit-jupiter-api-5.6.0.jar;C:\Users\Sebas\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\Sebas\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Sebas\.m2\repository\org\junit\platform\junit-platform-commons\1.6.0\junit-platform-commons-1.6.0.jar;C:\Users\Sebas\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.6.0\junit-jupiter-params-5.6.0.jar;C:\Users\Sebas\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.6.0\junit-jupiter-engine-5.6.0.jar;C:\Users\Sebas\.m2\repository\org\junit\platform\junit-platform-engine\1.6.0\junit-platform-engine-1.6.0.jar;"/>
+    <property name="test" value="baseDatos.ConexionTest#testConectar"/>
+    <property name="surefire.test.class.path" value="D:\SoftawareFinal\ExamenFinal\ExamenFinalSoftware\target\test-classes;D:\SoftawareFinal\ExamenFinal\ExamenFinalSoftware\target\classes;C:\Users\Sofia Poma\.m2\repository\mysql\mysql-connector-java\8.0.30\mysql-connector-java-8.0.30.jar;C:\Users\Sofia Poma\.m2\repository\com\google\protobuf\protobuf-java\3.19.4\protobuf-java-3.19.4.jar;C:\Users\Sofia Poma\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.6.0\junit-jupiter-api-5.6.0.jar;C:\Users\Sofia Poma\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\Sofia Poma\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Sofia Poma\.m2\repository\org\junit\platform\junit-platform-commons\1.6.0\junit-platform-commons-1.6.0.jar;C:\Users\Sofia Poma\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.6.0\junit-jupiter-params-5.6.0.jar;C:\Users\Sofia Poma\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.6.0\junit-jupiter-engine-5.6.0.jar;C:\Users\Sofia Poma\.m2\repository\org\junit\platform\junit-platform-engine\1.6.0\junit-platform-engine-1.6.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
-    <property name="user.home" value="C:\Users\Sebas"/>
+    <property name="user.home" value="C:\Users\Sofia Poma"/>
     <property name="user.language" value="es"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="java.version.date" value="2021-01-19"/>
     <property name="java.home" value="C:\Program Files\Java\jdk-15.0.2"/>
     <property name="file.separator" value="\"/>
-    <property name="basedir" value="C:\Users\Sebas\OneDrive\Escritorio\UNI\2022-1\SOFTWARE 2\final\ExamenFinal\ExamenFinalSoftware"/>
-    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="basedir" value="D:\SoftawareFinal\ExamenFinal\ExamenFinalSoftware"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\Sebas\AppData\Local\Temp\surefire15257096019146313268\surefirebooter14345015479527572774.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\SOFIAP~1\AppData\Local\Temp\surefire12666073835086400023\surefirebooter7855175106737919982.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="15.0.2+7-27"/>
-    <property name="user.name" value="Sebas"/>
+    <property name="user.name" value="Sofia Poma"/>
     <property name="path.separator" value=";"/>
     <property name="os.version" value="10.0"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="file.encoding" value="UTF-8"/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
-    <property name="maven.ext.class.path" value="C:\Program Files\NetBeans-14\netbeans\java\maven-nblib\netbeans-eventspy.jar"/>
-    <property name="localRepository" value="C:\Users\Sebas\.m2\repository"/>
+    <property name="maven.ext.class.path" value="D:\NetBeansInstalacion\NetBeans-14\netbeans\java\maven-nblib\netbeans-eventspy.jar"/>
+    <property name="localRepository" value="C:\Users\Sofia Poma\.m2\repository"/>
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
-    <property name="java.io.tmpdir" value="C:\Users\Sebas\AppData\Local\Temp\"/>
+    <property name="java.io.tmpdir" value="C:\Users\SOFIAP~1\AppData\Local\Temp\"/>
     <property name="java.version" value="15.0.2"/>
-    <property name="user.dir" value="C:\Users\Sebas\OneDrive\Escritorio\UNI\2022-1\SOFTWARE 2\final\ExamenFinal\ExamenFinalSoftware"/>
+    <property name="user.dir" value="D:\SoftawareFinal\ExamenFinal\ExamenFinalSoftware"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="sun.os.patch.level" value=""/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk-15.0.2\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Users\Sebas\AppData\Local\Programs\Python\Python310\Scripts;C:\Users\Sebas\AppData\Local\Programs\Python\Python310;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\dotnet\;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\PostgreSQL\13\bin;C:\Program Files\Git\cmd;C:\w64devkit\bin;C:\Program Files\dotnet\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Users\Sebas\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\Sebas\AppData\Local\Programs\Python\Python310\;C:\Users\Sebas\AppData\Local\Microsoft\WindowsApps;C:\Users\Sebas\AppData\Local\GitHubDesktop\bin;C:\Users\Sebas\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Sebas\AppData\Roaming\npm;C:\Users\Sebas\AppData\Local\Programs\Julia-1.6.3\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2022.1\bin;;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-15.0.2\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\MPI\Bin\;C:\Program Files (x86)\Embarcadero\Studio\20.0\bin;C:\Users\Public\Documents\Embarcadero\Studio\20.0\Bpl;C:\Program Files (x86)\Embarcadero\Studio\20.0\bin64;C:\Users\Public\Documents\Embarcadero\Studio\20.0\Bpl\Win64;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\compiler;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;D:\NODE\;D:\Git\Git\cmd;D:\TDM\DESCARGA\bin;C:\Program Files\dotnet\;C:\Program Files\Java\jdk1.8.0_202\bin;D:\Scripts\;D:\;C:\Users\Sofia Poma\AppData\Local\Microsoft\WindowsApps;C:\Users\Sofia Poma\AppData\Local\hyper\app-3.0.2\resources\bin;C:\Program Files\JetBrains\PyCharm Community Edition 2020.2.1\bin;C:\Users\Sofia Poma\PyCharm 2020.3\bin;C:\Users\Sofia Poma\AppData\Local\Microsoft\WindowsApps;D:\Microsoft VS Code\bin;C:\Program Files\PostgreSQL\13\bin;D:\anaconda\Library\bin;C:\Users\Sofia Poma\AppData\Roaming\npm;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\libnvvp;;D:\IntelliJ IDEA\IntelliJ IDEA Community Edition 2022.1\bin;;."/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
     <property name="java.vendor" value="Oracle Corporation"/>
     <property name="java.vm.version" value="15.0.2+7-27"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="59.0"/>
   </properties>
-  <testcase name="testDesconectar" classname="baseDatos.ConexionTest" time="0.228"/>
-  <testcase name="testConectar" classname="baseDatos.ConexionTest" time="0.004"/>
+  <testcase name="testConectar" classname="baseDatos.ConexionTest" time="0.383"/>
 </testsuite>

@@ -4,36 +4,39 @@
  */
 package states;
 
-import models.Lavadora;
+import models.Electrodomestico;
 
 /**
  *
  * @author Sofia Poma
  */
-public class EnPartesLavState extends LavadoraState {
-
-    EnPartesLavState(Lavadora lavadora) {
-        super(lavadora);
+public class RemateState extends State{
+    
+    RemateState(Electrodomestico elec){
+        super(elec);
     }
 
     @Override
     public String vender() {
-        return "Ya ha sido Desmantelado";
+        elec.cambiarState(new VendidoState(elec));
+        return "Producto Vendido";
     }
 
     @Override
     public String rematar() {
-        return "Ya ha sido Desmantelado";
+        return "Producto ya en descuento.";
     }
 
     @Override
     public String desmantelar() {
-        return "Ya ha sido Desmantelado";
+        return "Producto Desmantelado";
     }
 
     @Override
     public String reparar() {
-        return "Ya ha sido Desmantelado";
+        return "Producto Funcional";
     }
-
+    
+    
+    
 }

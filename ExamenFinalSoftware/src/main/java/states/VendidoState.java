@@ -4,16 +4,17 @@
  */
 package states;
 
+import models.Electrodomestico;
 import models.Lavadora;
 
 /**
  *
  * @author Sofia Poma
  */
-public class VendidoLavState extends LavadoraState {
+public class VendidoState extends State {
     
-    VendidoLavState(Lavadora lavadora){
-        super(lavadora);
+    public VendidoState(Electrodomestico elec){
+        super(elec);
     }
 
     @Override

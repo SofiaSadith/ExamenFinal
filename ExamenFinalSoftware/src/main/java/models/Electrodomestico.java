@@ -4,6 +4,8 @@
  */
 package models;
 
+import states.State;
+
 /**
  *
  * @author Sebas
@@ -16,6 +18,16 @@ public abstract class Electrodomestico {
     String estado;
     Double precio;
     boolean descuento;
+    
+    State state;
+    
+    public void cambiarState(State state){
+        this.state=state;
+    }
+    
+    public State getState(){
+        return state;
+    }
 
     public String getMarca() {
         return marca;

@@ -4,6 +4,9 @@
  */
 package gui;
 
+import javax.swing.table.DefaultTableModel;
+import models.LgLavadora;
+
 /**
  *
  * @author Sofia Poma
@@ -13,8 +16,20 @@ public class Estados extends javax.swing.JFrame {
     /**
      * Creates new form Estados
      */
+    LgLavadora lav = new LgLavadora("modelo", "123", "wqe", 1, 1, true, 1);
+
     public Estados() {
         initComponents();
+        DefaultTableModel model = new DefaultTableModel();
+        model.addColumn("marca");
+        model.addColumn("modelo");
+        model.addColumn("nroSerie");
+        model.addColumn("precio");
+        model.addColumn("estado");
+
+        model.addRow(new Object[]{lav.getMarca(), lav.getEstado(), 123, 1200, lav.getState()});
+
+        jTable1.setModel(model);
     }
 
     /**
@@ -69,8 +84,18 @@ public class Estados extends javax.swing.JFrame {
         );
 
         jButton1.setText("Reparar");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jButton2.setText("Vender");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         jButton3.setText("Rematar");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -87,6 +112,13 @@ public class Estados extends javax.swing.JFrame {
         });
 
         jButton5.setText("Desmantelar");
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
+
+        jTextField1.setEditable(false);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -145,8 +177,25 @@ public class Estados extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        // TODO add your handling code here:
+        String rpt = lav.getState().rematar();
+        jTextField1.setText(rpt);
+        //jTable1.getModel();
     }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        String rpt = lav.getState().reparar();
+        jTextField1.setText(rpt);
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        String rpt = lav.getState().vender();
+        jTextField1.setText(rpt);
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        String rpt = lav.getState().desmantelar();
+        jTextField1.setText(rpt);
+    }//GEN-LAST:event_jButton5ActionPerformed
 
     /**
      * @param args the command line arguments

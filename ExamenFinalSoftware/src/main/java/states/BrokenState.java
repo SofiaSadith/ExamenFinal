@@ -4,21 +4,21 @@
  */
 package states;
 
-import models.Lavadora;
+import models.Electrodomestico;
 
 /**
  *
  * @author Sofia Poma
  */
-public class BrokenLavState extends LavadoraState {
+public class BrokenState extends State {
 
-    BrokenLavState(Lavadora lavadora) {
-        super(lavadora);
+    public BrokenState(Electrodomestico elec) {
+        super(elec);
     }
 
     @Override
     public String reparar() {
-        lavadora.cambiarState(new RemateLavState(lavadora));
+        elec.cambiarState(new RemateState(elec));
         return "Producto Reparado.";
     }
 
@@ -34,6 +34,7 @@ public class BrokenLavState extends LavadoraState {
 
     @Override
     public String desmantelar() {
+        elec.cambiarState(new EnPartesState(elec));
         return "Desmantelado.";
     }
 

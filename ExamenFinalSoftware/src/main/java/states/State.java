@@ -4,18 +4,19 @@
  */
 package states;
 
+import models.Electrodomestico;
 import models.Lavadora;
 
 /**
  *
  * @author Sofia Poma
  */
-public abstract class LavadoraState {
+public abstract class State {
 
-    Lavadora lavadora;
+    Electrodomestico elec;
 
-    LavadoraState(Lavadora lavadora) {
-        this.lavadora = lavadora;
+    State(Electrodomestico elec) {
+        this.elec = elec;
     }
 
     public abstract String vender();

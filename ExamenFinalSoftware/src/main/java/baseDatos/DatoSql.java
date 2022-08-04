@@ -12,7 +12,15 @@ public class DatoSql {
     private String numeroSerie;
     private String nombre;
     private String descripcion;
-
+    
+    /*
+    public DatoSql(String numeroSerie, String nombre, String descripcion) {
+        this.numeroSerie = numeroSerie;
+        this.nombre = nombre;
+        this.descripcion = descripcion;
+    }
+    */
+    
     public String getNumeroSerie() {
         return numeroSerie;
     }

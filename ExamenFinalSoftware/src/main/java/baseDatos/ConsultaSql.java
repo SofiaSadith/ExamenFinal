@@ -56,6 +56,15 @@ public class ConsultaSql {
             System.out.println(e);
         }
     } 
-    
-    
+    public void borrarElemento(DatoSql dato){
+        String sql = "DELETE FROM productos WHERE NumeroSerie= \'"+dato.getNumeroSerie()+"\';";
+        try{
+            st = conet.createStatement();
+            st.executeUpdate(sql);
+            System.out.println("Se ha eliminado el elemento correctamente");
+            
+        }catch(SQLException e){
+            System.out.println(e);
+        }
+    } 
 }

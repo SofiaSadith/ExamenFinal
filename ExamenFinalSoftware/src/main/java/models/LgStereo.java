@@ -8,11 +8,8 @@ package models;
  *
  * @author Sofia Poma
  */
-public class LgStereo extends Electrodomestico implements Stereo{
-    private final int numUsb;
-    private final int numParlantes;
-    private final boolean karaoke;
-    private final boolean ecualizador;
+public class LgStereo extends Stereo{
+    
 
     public LgStereo(String modelo, String numSerie, String estado, double precio, int numUsb, int numParlantes, boolean karaoke, boolean ecualizador) {
         this.marca="LG";

@@ -8,10 +8,8 @@ package models;
  *
  * @author Sofia Poma
  */
-public class LgTelevisor extends Electrodomestico implements Televisor{
-    private final boolean bluetooth;
-    private final boolean wifi;
-    private final boolean controlVoz;
+public class LgTelevisor extends Televisor{
+    
 
     public LgTelevisor(String modelo, String numSerie, String estado, double precio, boolean bluetooth, boolean wifi, boolean controlVoz) {
         this.marca="LG";

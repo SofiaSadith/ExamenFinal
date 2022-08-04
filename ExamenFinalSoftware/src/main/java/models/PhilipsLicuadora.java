@@ -8,11 +8,8 @@ package models;
  *
  * @author Sebas
  */
-public class PhilipsLicuadora extends Electrodomestico implements Licuadora{
-    private final int velocidades;
-    private final double potencia;
-    private final String tipoVaso;
-    private final boolean picaHielo;
+public class PhilipsLicuadora extends Licuadora{
+    
 
     public PhilipsLicuadora(String modelo, String numSerie, String estado, double precio, int velocidades, double potencia, String tipoVaso, boolean picaHielo) {
         this.marca="Philips";

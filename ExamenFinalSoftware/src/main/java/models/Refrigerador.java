@@ -8,9 +8,13 @@ package models;
  *
  * @author skynetgaming
  */
-public interface Refrigerador {
-    double getCapacidad();
-    boolean isDispensadorAgua();
-    boolean isDispensadorHielo();
-    boolean isAlarmaPuertaAbierta();
+public abstract class Refrigerador extends Electrodomestico{
+    double capacidad;
+    boolean dispensadorAgua;
+    boolean dispensadorHielo;
+    boolean alarmaPuertaAbierta;
+    abstract double getCapacidad();
+    abstract boolean isDispensadorAgua();
+    abstract boolean isDispensadorHielo();
+    abstract boolean isAlarmaPuertaAbierta();
 }

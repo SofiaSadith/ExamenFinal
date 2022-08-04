@@ -8,11 +8,8 @@ package models;
  *
  * @author skynetgaming
  */
-public class SamsungRefrigerador extends Electrodomestico implements Refrigerador{
-    private final double capacidad;
-    private final boolean dispensadorAgua;
-    private final boolean dispensadorHielo;
-    private final boolean alarmaPuertaAbierta;
+public class SamsungRefrigerador extends Refrigerador{
+    
 
     public SamsungRefrigerador(String modelo, String numSerie, String estado, double precio,double capacidad, boolean dispensadorAgua, boolean dispensadorHielo, boolean alarmaPuertaAbierta) {
         this.marca = "Samsung";

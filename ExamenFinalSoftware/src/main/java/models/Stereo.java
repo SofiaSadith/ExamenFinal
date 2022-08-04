@@ -8,10 +8,14 @@ package models;
  *
  * @author Sofia Poma
  */
-public interface Stereo {
-    int getNumUsb();
-    int getNumParlantes();
-    boolean isKaraoke();
-    boolean isEcualizador();
+public abstract class Stereo extends Electrodomestico{
+    int numUsb;
+    int numParlantes;
+    boolean karaoke;
+    boolean ecualizador;
+    abstract int getNumUsb();
+    abstract int getNumParlantes();
+    abstract boolean isKaraoke();
+    abstract boolean isEcualizador();
     
 }

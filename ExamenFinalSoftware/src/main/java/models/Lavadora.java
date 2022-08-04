@@ -8,8 +8,11 @@ package models;
  *
  * @author Sebas
  */
-public interface Lavadora {
-    double getCapacidad();
-    boolean isPanel();
-    int getNumProgramas();
+public abstract class Lavadora extends Electrodomestico{
+    double capacidad;
+    boolean panel;
+    int numProgramas;
+    abstract double getCapacidad();
+    abstract boolean isPanel();
+    abstract int getNumProgramas();
 }

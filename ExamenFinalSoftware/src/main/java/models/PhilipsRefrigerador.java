@@ -8,11 +8,8 @@ package models;
  *
  * @author skynetgaming
  */
-public class PhilipsRefrigerador extends Electrodomestico implements Refrigerador{
-    private final double capacidad;
-    private final boolean dispensadorAgua;
-    private final boolean dispensadorHielo;
-    private final boolean alarmaPuertaAbierta;
+public class PhilipsRefrigerador extends Refrigerador{
+    
 
     public PhilipsRefrigerador(String modelo, String numSerie, String estado, double precio,double capacidad, boolean dispensadorAgua, boolean dispensadorHielo, boolean alarmaPuertaAbierta) {
         this.marca = "Philips";

@@ -16,6 +16,26 @@ public abstract class Electrodomestico {
     String estado;
     Double precio;
 
+    public String getMarca() {
+        return marca;
+    }
+
+    public String getModelo() {
+        return modelo;
+    }
+
+    public String getNumSerie() {
+        return numSerie;
+    }
+
+    public String getEstado() {
+        return estado;
+    }
+
+    public Double getPrecio() {
+        return precio;
+    }
+
     public void setEstado(String estado) {
         this.estado = estado;
     }

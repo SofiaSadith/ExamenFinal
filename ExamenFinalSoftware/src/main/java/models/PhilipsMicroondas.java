@@ -8,13 +8,8 @@ package models;
  *
  * @author skynetgaming
  */
-public class PhilipsMicroondas extends Electrodomestico implements Microondas{
-    private final double capacidad;
-    private final boolean panel;
-    private final double potencia;
-    private final boolean funcionGrill;
-    private final boolean reloj;
-    private final boolean cronometro;
+public class PhilipsMicroondas extends Microondas{
+    
 
     public PhilipsMicroondas(String modelo, String numSerie, String estado, double precio,double capacidad, boolean panel, double potencia, boolean funcionGrill, boolean reloj, boolean cronometro) {
         this.marca="Philips";

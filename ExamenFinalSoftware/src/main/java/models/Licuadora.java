@@ -8,9 +8,13 @@ package models;
  *
  * @author Sebas
  */
-public interface Licuadora {
-    int getVelocidades();
-    double getPotencia();
-    String getTipoVaso();
-    boolean picaHielo();    
+public abstract class Licuadora extends Electrodomestico{
+    int velocidades;
+    double potencia;
+    String tipoVaso;
+    boolean picaHielo;
+    abstract int getVelocidades();
+    abstract double getPotencia();
+    abstract String getTipoVaso();
+    abstract boolean picaHielo();    
 }

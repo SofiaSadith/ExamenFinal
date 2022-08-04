@@ -8,10 +8,8 @@ package models;
  *
  * @author Sebas
  */
-public class SamsungLavadora extends Electrodomestico implements Lavadora{
-    private final double capacidad;
-    private final boolean panel;
-    private final int numProgramas;
+public class SamsungLavadora extends Lavadora{
+    
 
     public SamsungLavadora(String modelo, String numSerie, String estado, double precio, double capacidad, boolean panel, int numProgramas) {
         this.marca="Samsung";

@@ -8,10 +8,8 @@ package models;
  *
  * @author Sebas
  */
-public class LgLavadora extends Electrodomestico implements Lavadora{
-    private final double capacidad;
-    private final boolean panel;
-    private final int numProgramas;
+public class LgLavadora extends Lavadora{
+    
     
     
     public LgLavadora(String modelo, String numSerie, String estado, double precio, double capacidad, boolean panel, int numProgramas){

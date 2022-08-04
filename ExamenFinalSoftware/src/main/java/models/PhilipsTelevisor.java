@@ -8,10 +8,7 @@ package models;
  *
  * @author Sofia Poma
  */
-public class PhilipsTelevisor extends Electrodomestico implements Televisor{
-    private final boolean bluetooth;
-    private final boolean wifi;
-    private final boolean controlVoz;
+public class PhilipsTelevisor extends Televisor{
 
     public PhilipsTelevisor(String modelo, String numSerie, String estado, double precio, boolean bluetooth, boolean wifi, boolean controlVoz) {
         this.marca="Philips";

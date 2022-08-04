@@ -8,11 +8,17 @@ package models;
  *
  * @author skynetgaming
  */
-public interface Microondas {
-    double getCapacidad();
-    boolean isPanel(); 
-    double getPotencia();
-    boolean isFuncionGrill();
-    boolean isReloj();
-    boolean isCronometro();
+public abstract class Microondas extends Electrodomestico{
+    double capacidad;
+    boolean panel;
+    double potencia;
+    boolean funcionGrill;
+    boolean reloj;
+    boolean cronometro;
+    abstract double getCapacidad();
+    abstract boolean isPanel(); 
+    abstract double getPotencia();
+    abstract boolean isFuncionGrill();
+    abstract boolean isReloj();
+    abstract boolean isCronometro();
 }

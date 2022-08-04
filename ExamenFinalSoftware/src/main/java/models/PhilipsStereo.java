@@ -8,11 +8,8 @@ package models;
  *
  * @author Sofia Poma
  */
-public class PhilipsStereo extends Electrodomestico implements Stereo{
-    private final int numUsb;
-    private final int numParlantes;
-    private final boolean karaoke;
-    private final boolean ecualizador;
+public class PhilipsStereo extends Stereo{
+   
 
     public PhilipsStereo( String modelo, String numSerie, String estado, double precio, int numUsb, int numParlantes, boolean karaoke, boolean ecualizador) {
         this.marca="Philps";
@@ -27,18 +24,22 @@ public class PhilipsStereo extends Electrodomestico implements Stereo{
         
     }
     
+    @Override
    public int getNumUsb(){
        return numUsb;
    } 
    
+    @Override
    public int getNumParlantes(){
        return numParlantes;
    }
    
+    @Override
    public boolean isKaraoke(){
        return karaoke;
    }
    
+    @Override
    public boolean isEcualizador(){
        return ecualizador;
    }

@@ -6,6 +6,7 @@ package baseDatos;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.sql.Statement;
 import javax.swing.table.DefaultTableModel;
 
@@ -15,16 +16,16 @@ import javax.swing.table.DefaultTableModel;
  */
 public class ConsultaSql {
     Conexion conex = new Conexion();
-    Connection conet;
+    Connection conet = conex.conectar();
     DefaultTableModel modelo;
     Statement st;
     ResultSet rs;
     int idc;
     
+    
     public void consultar(){
         String sql = "select * from productos";
         try{
-            conet = conex.conectar();
             st = conet.createStatement();
             rs = st.executeQuery(sql);
             Object[] producto = new Object[3];
@@ -39,26 +40,22 @@ public class ConsultaSql {
                 System.out.println("-------------------------");
             }
             
-        }catch(Exception e){
+        }catch(SQLException e){
             System.out.println(e);
         }
     }
     
-    public void anadirElemento(String nrSerie, String nombre, String desc){
-        String sql = "INSERT INTO productos (NumeroSerie, Nombre, Descripcion) VALUES (\'"+nrSerie+"\', \'"+nombre+"\', \'"+desc+"\');";
+    public void anadirElemento(DatoSql dato){
+        String sql = "INSERT INTO productos (NumeroSerie, Nombre, Descripcion) VALUES (\'"+dato.getNumeroSerie()+"\', \'"+dato.getNombre()+"\', \'"+dato.getDescripcion()+"\');";
         try{
-            conet = conex.conectar();
             st = conet.createStatement();
             st.executeUpdate(sql);
-            System.out.println("Se a agregado el elemento correctamente");
+            System.out.println("Se ha agregado el elemento correctamente");
             
-        }catch(Exception e){
+        }catch(SQLException e){
             System.out.println(e);
         }
-    }
-    
-    
-    
+    } 
     
     
 }

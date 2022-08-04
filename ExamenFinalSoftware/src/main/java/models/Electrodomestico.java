@@ -15,6 +15,7 @@ public abstract class Electrodomestico {
     String numSerie;
     String estado;
     Double precio;
+    boolean descuento;
 
     public String getMarca() {
         return marca;
@@ -35,9 +36,15 @@ public abstract class Electrodomestico {
     public Double getPrecio() {
         return precio;
     }
+    public boolean getDescuento() {
+        return descuento;
+    }
 
     public void setEstado(String estado) {
         this.estado = estado;
     }
     
+    public void setDescuento(boolean descuento){
+         this.descuento = descuento; 
+    }
 }

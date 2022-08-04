@@ -33,6 +33,7 @@ public class Conexion {
             Class.forName(driver);
             cx = DriverManager.getConnection(url+bd, usuario,contrasena);
             System.out.println("Se pudo conectar a la base de datos "+bd);
+            return cx;
         } catch (ClassNotFoundException | SQLException ex){
             System.out.println("No se pudo conectar a la base de datos "+bd);
             Logger.getLogger(Conexion.class.getName()).log(Level.SEVERE, null, ex);      
@@ -41,12 +42,14 @@ public class Conexion {
     }
     
     //Desconectar a la base de datos
-    public void desconectar(){
+    public String desconectar(){
         try {
             cx.close();
+            return "Base de datos desconectada";
         } catch (SQLException ex) {
             Logger.getLogger(Conexion.class.getName()).log(Level.SEVERE, null, ex);
         }
+        return "Error al desconectar la base de datos";
     }
     
     public static void main(String[] args) {

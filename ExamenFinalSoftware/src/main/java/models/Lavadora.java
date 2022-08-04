@@ -10,6 +10,6 @@ package models;
  */
 public interface Lavadora {
     double getCapacidad();
-    boolean getPanel();
+    boolean isPanel();
     int getNumProgramas();
 }

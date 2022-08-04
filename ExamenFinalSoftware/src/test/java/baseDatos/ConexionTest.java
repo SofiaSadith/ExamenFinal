@@ -17,7 +17,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 /**
  *
- * @author Bruno Cipriano
+ * @author ssegundo
  */
 public class ConexionTest {
     
@@ -34,7 +34,6 @@ public class ConexionTest {
             boolean expResult = true;
             boolean result = instance.conectar().isValid(5);
             assertEquals(expResult, result);
-            // TODO review the generated test code and remove the default call to fail.
             
         } catch (SQLException ex) {
             Logger.getLogger(ConexionTest.class.getName()).log(Level.SEVERE, null, ex);
@@ -45,28 +44,18 @@ public class ConexionTest {
      * Test of desconectar method, of class Conexion.
      */
     @org.junit.jupiter.api.Test
-    public void testDesconectarOk() {
-        System.out.println("desconectar");
-        Conexion instance = new Conexion();
-        String expResult = "Error al desconectar la base de datos";
-        
-        String result = instance.desconectar();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-    
-
-    /**
-     * Test of main method, of class Conexion.
-     */
-    @org.junit.jupiter.api.Test
-    public void testMain() {
-        System.out.println("main");
-        String[] args = null;
-        Conexion.main(args);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+    public void testDesconectar() {
+        try {
+            System.out.println("desconectar");
+            Conexion instance = new Conexion();
+            boolean expResult = true;
+            instance.conectar();
+            boolean result = instance.desconectar().isClosed();
+            
+            assertEquals(expResult, result);
+        } catch (SQLException ex) {
+            Logger.getLogger(ConexionTest.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
     
 }

@@ -12,7 +12,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author skynetgaming
+ * @author ssegundo
  */
 public class Conexion {
     String bd="tiendabd";
@@ -42,14 +42,14 @@ public class Conexion {
     }
     
     //Desconectar a la base de datos
-    public String desconectar(){
+    public Connection desconectar(){
         try {
             cx.close();
-            return "Base de datos desconectada";
+            return cx;
         } catch (SQLException ex) {
             Logger.getLogger(Conexion.class.getName()).log(Level.SEVERE, null, ex);
         }
-        return "Error al desconectar la base de datos";
+        return cx;
     }
     
     public static void main(String[] args) {

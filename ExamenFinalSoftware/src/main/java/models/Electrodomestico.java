@@ -13,7 +13,7 @@ public abstract class Electrodomestico {
     String marca;
     String modelo;
     String numSerie;
-    private String estado;
+    String estado;
     Double precio;
 
     public void setEstado(String estado) {

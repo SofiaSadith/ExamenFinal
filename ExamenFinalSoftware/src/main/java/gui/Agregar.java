@@ -4,6 +4,8 @@
  */
 package gui;
 
+import javax.swing.table.DefaultTableModel;
+
 /**
  *
  * @author Sofia Poma
@@ -91,9 +93,14 @@ public class Agregar extends javax.swing.JFrame {
             }
         });
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Vendido", "Reparado", "Dañado" }));
 
         btnguardar.setText("Guardar");
+        btnguardar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnguardarActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -219,6 +226,29 @@ public class Agregar extends javax.swing.JFrame {
         y.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void btnguardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnguardarActionPerformed
+        // TODO add your handling code here:
+        String marca = jTextField1.getText();
+        String modelo = jTextField2.getText();
+        String nroSerie = jTextField3.getText();
+        String precio = jTextField4.getText();
+        String estado = (String)jComboBox1.getSelectedItem();
+        DefaultTableModel model = new DefaultTableModel();
+        model.addColumn("marca");
+        model.addColumn("modelo");
+        model.addColumn("nroSerie");
+        model.addColumn("precio");
+        model.addColumn("estado");
+        
+        model.addRow(new Object[]{marca, modelo, nroSerie, precio, estado});
+        
+        jTable2.setModel(model);
+        jTextField1.setText("");
+        jTextField2.setText("");
+        jTextField3.setText("");
+        jTextField4.setText("");
+    }//GEN-LAST:event_btnguardarActionPerformed
 
     /**
      * @param args the command line arguments

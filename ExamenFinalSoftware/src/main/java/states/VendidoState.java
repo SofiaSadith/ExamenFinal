@@ -5,7 +5,6 @@
 package states;
 
 import models.Electrodomestico;
-import models.Lavadora;
 
 /**
  *

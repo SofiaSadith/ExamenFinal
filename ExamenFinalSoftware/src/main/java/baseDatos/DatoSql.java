@@ -15,14 +15,6 @@ public class DatoSql {
     public double precio;
     public String estado;
     
-    /*
-    public DatoSql(String numeroSerie, String nombre, String descripcion) {
-        this.numeroSerie = numeroSerie;
-        this.nombre = nombre;
-        this.descripcion = descripcion;
-    }
-    */
-    
     public String getNumeroSerie() {
         return numeroSerie;
     }

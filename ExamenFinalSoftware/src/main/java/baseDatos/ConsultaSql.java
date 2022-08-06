@@ -49,20 +49,8 @@ public class ConsultaSql {
         }
     }
 
-    /*
-    public void anadirElemento(DatoSql dato) {
-        String sql = "INSERT INTO productos (Marca, Modelo, NumSerie, Precio, Estado) VALUES (\'" + dato.marca + "\',\'" + dato.modelo + "\',\'" + dato.getNumeroSerie() + "\', \'" + dato.precio + "\', \'" + dato.estado + "\');";
-        try {
-            st = conet.createStatement();
-            st.executeUpdate(sql);
-            System.out.println("Se ha agregado el elemento correctamente");
-
-        } catch (SQLException e) {
-            System.out.println(e);
-        }
-    }
-     */
-
+   
+    //Añadir elemento con datoSql
     public void anadirElemento(Electrodomestico dato) {
         String sql = "INSERT INTO productos (Marca, Modelo, NumSerie, Precio, Estado) VALUES (\'" + dato.getMarca() + "\',\'" + dato.getModelo() + "\',\'" + dato.getNumSerie() + "\', \'" + dato.getPrecio() + "\', \'" + dato.getEstado() + "\');";
         try {
@@ -74,7 +62,8 @@ public class ConsultaSql {
             System.out.println(e);
         }
     }
-
+    
+    //Añadir elemento con elementos
     public void anadirElementoStr(String marca,String mod,String s,int p,String e) {
         String sql = "INSERT INTO productos (Marca, Modelo, NumSerie, Precio, Estado) VALUES (\'" + marca + "\',\'" + mod + "\',\'" + s + "\', \'" + p + "\', \'" + e + "\');";
         try {
@@ -86,7 +75,8 @@ public class ConsultaSql {
             System.out.println(er);
         }
     }
-
+    
+    //Borrar elemento con datoSql
     public void borrarElemento(DatoSql dato) {
         String sql = "DELETE FROM productos WHERE NumSerie= \'" + dato.getNumeroSerie() + "\';";
         try {

@@ -11,7 +11,7 @@ package models;
 public class SamsungMicroondas extends Microondas{
     
 
-    public SamsungMicroondas(String modelo, String numSerie, String estado, double precio,double capacidad, boolean panel, double potencia, boolean funcionGrill, boolean reloj, boolean cronometro) {
+    public SamsungMicroondas(String modelo, String numSerie, String estado, int precio,double capacidad, boolean panel, double potencia, boolean funcionGrill, boolean reloj, boolean cronometro) {
         this.marca="Samsung";
         this.modelo=modelo;
         this.numSerie=numSerie;

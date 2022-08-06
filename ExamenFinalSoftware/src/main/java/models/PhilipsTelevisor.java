@@ -10,7 +10,7 @@ package models;
  */
 public class PhilipsTelevisor extends Televisor{
 
-    public PhilipsTelevisor(String modelo, String numSerie, String estado, double precio, boolean bluetooth, boolean wifi, boolean controlVoz) {
+    public PhilipsTelevisor(String modelo, String numSerie, String estado, int precio, boolean bluetooth, boolean wifi, boolean controlVoz) {
         this.marca="Philips";
         this.modelo=modelo;
         this.numSerie=numSerie;

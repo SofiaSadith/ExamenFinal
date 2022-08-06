@@ -11,7 +11,7 @@ package models;
 public class LgLicuadora extends Licuadora{
     
 
-    public LgLicuadora(String modelo, String numSerie, String estado, double precio, int velocidades, double potencia, String tipoVaso, boolean picaHielo) {
+    public LgLicuadora(String modelo, String numSerie, String estado, int precio, int velocidades, double potencia, String tipoVaso, boolean picaHielo) {
         this.marca="LG";
         this.modelo=modelo;
         this.numSerie=numSerie;

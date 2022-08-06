@@ -11,7 +11,7 @@ package models;
 public class LgTelevisor extends Televisor{
     
 
-    public LgTelevisor(String modelo, String numSerie, String estado, double precio, boolean bluetooth, boolean wifi, boolean controlVoz) {
+    public LgTelevisor(String modelo, String numSerie, String estado, int precio, boolean bluetooth, boolean wifi, boolean controlVoz) {
         this.marca="LG";
         this.modelo=modelo;
         this.numSerie=numSerie;

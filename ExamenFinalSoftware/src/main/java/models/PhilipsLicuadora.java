@@ -11,7 +11,7 @@ package models;
 public class PhilipsLicuadora extends Licuadora{
     
 
-    public PhilipsLicuadora(String modelo, String numSerie, String estado, double precio, int velocidades, double potencia, String tipoVaso, boolean picaHielo) {
+    public PhilipsLicuadora(String modelo, String numSerie, String estado, int precio, int velocidades, double potencia, String tipoVaso, boolean picaHielo) {
         this.marca="Philips";
         this.modelo=modelo;
         this.numSerie=numSerie;

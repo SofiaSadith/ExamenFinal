@@ -11,7 +11,7 @@ package models;
 public class LgMicroondas extends Microondas{
     
 
-    public LgMicroondas(String modelo, String numSerie, String estado, double precio,double capacidad, boolean panel, double potencia, boolean funcionGrill, boolean reloj, boolean cronometro) {
+    public LgMicroondas(String modelo, String numSerie, String estado, int precio,double capacidad, boolean panel, double potencia, boolean funcionGrill, boolean reloj, boolean cronometro) {
         this.marca="LG";
         this.modelo=modelo;
         this.numSerie=numSerie;

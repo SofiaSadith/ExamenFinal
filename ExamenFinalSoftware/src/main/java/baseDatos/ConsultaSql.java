@@ -9,62 +9,97 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import javax.swing.table.DefaultTableModel;
+import models.Electrodomestico;
 
 /**
  *
  * @author skynetgaming
  */
 public class ConsultaSql {
+
     Conexion conex = new Conexion();
     Connection conet = conex.conectar();
     DefaultTableModel modelo;
     Statement st;
     ResultSet rs;
     int idc;
-    
-    
-    public void consultar(){
+
+    public void consultar(DefaultTableModel model) {
         String sql = "select * from productos";
-        try{
+        try {
             st = conet.createStatement();
             rs = st.executeQuery(sql);
-            Object[] producto = new Object[3];
-            
-            while(rs.next()){
-                producto[0] = rs.getString("NumeroSerie");
-                producto[1] = rs.getString("Nombre");
-                producto[2] = rs.getString("Descripcion");
-                System.out.println("No Serie: " + producto[0]);
-                System.out.println("Nombre: " + producto[1]);
-                System.out.println("Descripcion: " + producto[2]);
+            Object[] producto = new Object[5];
+
+            while (rs.next()) {
+                producto[0] = rs.getString("Marca");
+                producto[1] = rs.getString("Modelo");
+                producto[2] = rs.getString("NumSerie");
+                producto[3] = rs.getString("Precio");
+                producto[4] = rs.getString("Estado");
+                model.addRow(producto);
+                System.out.println("Marca: " + producto[0]);
+                System.out.println("Modelo: " + producto[1]);
+                System.out.println("NumSerie: " + producto[2]);
                 System.out.println("-------------------------");
             }
-            
-        }catch(SQLException e){
+
+        } catch (SQLException e) {
             System.out.println(e);
         }
     }
-    
-    public void anadirElemento(DatoSql dato){
-        String sql = "INSERT INTO productos (NumeroSerie, Nombre, Descripcion) VALUES (\'"+dato.getNumeroSerie()+"\', \'"+dato.getNombre()+"\', \'"+dato.getDescripcion()+"\');";
-        try{
+
+    /*
+    public void anadirElemento(DatoSql dato) {
+        String sql = "INSERT INTO productos (Marca, Modelo, NumSerie, Precio, Estado) VALUES (\'" + dato.marca + "\',\'" + dato.modelo + "\',\'" + dato.getNumeroSerie() + "\', \'" + dato.precio + "\', \'" + dato.estado + "\');";
+        try {
             st = conet.createStatement();
             st.executeUpdate(sql);
             System.out.println("Se ha agregado el elemento correctamente");
-            
-        }catch(SQLException e){
+
+        } catch (SQLException e) {
             System.out.println(e);
         }
-    } 
-    public void borrarElemento(DatoSql dato){
-        String sql = "DELETE FROM productos WHERE NumeroSerie= \'"+dato.getNumeroSerie()+"\';";
-        try{
+    }
+     */
+
+    public void anadirElemento(Electrodomestico dato) {
+        String sql = "INSERT INTO productos (Marca, Modelo, NumSerie, Precio, Estado) VALUES (\'" + dato.getMarca() + "\',\'" + dato.getModelo() + "\',\'" + dato.getNumSerie() + "\', \'" + dato.getPrecio() + "\', \'" + dato.getEstado() + "\');";
+        try {
+            st = conet.createStatement();
+            st.executeUpdate(sql);
+            System.out.println("Se ha agregado el elemento correctamente");
+
+        } catch (SQLException e) {
+            System.out.println(e);
+        }
+    }
+
+    public void anadirElementoStr(String marca,String mod,String s,int p,String e) {
+        String sql = "INSERT INTO productos (Marca, Modelo, NumSerie, Precio, Estado) VALUES (\'" + marca + "\',\'" + mod + "\',\'" + s + "\', \'" + p + "\', \'" + e + "\');";
+        try {
+            st = conet.createStatement();
+            st.executeUpdate(sql);
+            System.out.println("Se ha agregado el elemento correctamente");
+
+        } catch (SQLException er) {
+            System.out.println(er);
+        }
+    }
+
+    public void borrarElemento(DatoSql dato) {
+        String sql = "DELETE FROM productos WHERE NumSerie= \'" + dato.getNumeroSerie() + "\';";
+        try {
             st = conet.createStatement();
             st.executeUpdate(sql);
             System.out.println("Se ha eliminado el elemento correctamente");
-            
-        }catch(SQLException e){
+
+        } catch (SQLException e) {
             System.out.println(e);
         }
-    } 
+    }
+
+    
+    
+    
 }

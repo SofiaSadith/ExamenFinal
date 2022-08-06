@@ -11,7 +11,7 @@ package models;
 public class SamsungStereo extends Stereo{
     
 
-    public SamsungStereo(String modelo, String numSerie, String estado, double precio, int numUsb, int numParlantes, boolean karaoke, boolean ecualizador) {
+    public SamsungStereo(String modelo, String numSerie, String estado, int precio, int numUsb, int numParlantes, boolean karaoke, boolean ecualizador) {
         this.marca="Samsung";
         this.modelo=modelo;
         this.numSerie=numSerie;

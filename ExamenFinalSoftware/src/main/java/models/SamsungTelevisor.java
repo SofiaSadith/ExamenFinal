@@ -11,7 +11,7 @@ package models;
 public class SamsungTelevisor extends Televisor{
     
 
-    public SamsungTelevisor(String modelo, String numSerie, String estado, double precio, boolean bluetooth, boolean wifi, boolean controlVoz) {
+    public SamsungTelevisor(String modelo, String numSerie, String estado, int precio, boolean bluetooth, boolean wifi, boolean controlVoz) {
         this.marca="Samsung";
         this.modelo=modelo;
         this.numSerie=numSerie;

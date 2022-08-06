@@ -4,6 +4,7 @@
  */
 package gui;
 
+import baseDatos.ConsultaSql;
 import javax.swing.table.DefaultTableModel;
 
 /**
@@ -11,14 +12,27 @@ import javax.swing.table.DefaultTableModel;
  * @author Sofia Poma
  */
 public class Agregar extends javax.swing.JFrame {
-    
+
     private String accion = "guardar";
 
     /**
      * Creates new form Agregar
      */
+    DefaultTableModel model = new DefaultTableModel();
+
+    ConsultaSql cons = new ConsultaSql();
+
     public Agregar() {
         initComponents();
+        model.addColumn("marca");
+        model.addColumn("modelo");
+        model.addColumn("nroSerie");
+        model.addColumn("precio");
+        model.addColumn("estado");
+        jTable2.setModel(model);
+        cons.consultar(model);
+        jTable2.setModel(model);
+        model.fireTableDataChanged();
     }
 
     /**
@@ -232,18 +246,14 @@ public class Agregar extends javax.swing.JFrame {
         String marca = jTextField1.getText();
         String modelo = jTextField2.getText();
         String nroSerie = jTextField3.getText();
-        String precio = jTextField4.getText();
-        String estado = (String)jComboBox1.getSelectedItem();
-        DefaultTableModel model = new DefaultTableModel();
-        model.addColumn("marca");
-        model.addColumn("modelo");
-        model.addColumn("nroSerie");
-        model.addColumn("precio");
-        model.addColumn("estado");
-        
-        model.addRow(new Object[]{marca, modelo, nroSerie, precio, estado});
-        
-        jTable2.setModel(model);
+        int precio = Integer.parseInt(jTextField4.getText());
+        String estado = (String) jComboBox1.getSelectedItem();
+
+        cons.anadirElementoStr(marca, modelo, nroSerie, precio, estado);
+        model.setRowCount(0);
+        cons.consultar(model);
+
+      
         jTextField1.setText("");
         jTextField2.setText("");
         jTextField3.setText("");

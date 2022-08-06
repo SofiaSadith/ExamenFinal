@@ -4,6 +4,7 @@
  */
 package gui;
 
+import baseDatos.ConsultaSql;
 import javax.swing.table.DefaultTableModel;
 import models.LgLavadora;
 
@@ -16,19 +17,20 @@ public class Estados extends javax.swing.JFrame {
     /**
      * Creates new form Estados
      */
+    ConsultaSql cons = new ConsultaSql();
     LgLavadora lav = new LgLavadora("modelo", "123", "wqe", 1, 1, true, 1);
+    DefaultTableModel model = new DefaultTableModel();
 
     public Estados() {
         initComponents();
-        DefaultTableModel model = new DefaultTableModel();
         model.addColumn("marca");
         model.addColumn("modelo");
         model.addColumn("nroSerie");
         model.addColumn("precio");
         model.addColumn("estado");
-
-        model.addRow(new Object[]{lav.getMarca(), lav.getEstado(), 123, 1200, lav.getState()});
-
+        cons.anadirElemento(lav);
+        //model.addRow(new Object[]{lav.getMarca(), lav.getEstado(), 123, 1200, lav.getState()});
+        cons.consultar(model);
         jTable1.setModel(model);
     }
 
@@ -179,22 +181,26 @@ public class Estados extends javax.swing.JFrame {
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         String rpt = lav.getState().rematar();
         jTextField1.setText(rpt);
-        //jTable1.getModel();
+        model.fireTableDataChanged();
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         String rpt = lav.getState().reparar();
         jTextField1.setText(rpt);
+        model.fireTableDataChanged();
+
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         String rpt = lav.getState().vender();
         jTextField1.setText(rpt);
+        model.fireTableDataChanged();
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         String rpt = lav.getState().desmantelar();
         jTextField1.setText(rpt);
+        model.fireTableDataChanged();
     }//GEN-LAST:event_jButton5ActionPerformed
 
     /**

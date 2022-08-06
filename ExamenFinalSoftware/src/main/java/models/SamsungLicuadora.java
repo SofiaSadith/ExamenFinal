@@ -11,7 +11,7 @@ package models;
 public class SamsungLicuadora extends Licuadora{
     
 
-    public SamsungLicuadora(String modelo, String numSerie, String estado, double precio, int velocidades, double potencia, String tipoVaso, boolean picaHielo) {
+    public SamsungLicuadora(String modelo, String numSerie, String estado, int precio, int velocidades, double potencia, String tipoVaso, boolean picaHielo) {
         this.marca="Samsung";
         this.modelo=modelo;
         this.numSerie=numSerie;

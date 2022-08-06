@@ -11,7 +11,7 @@ package models;
 public class PhilipsRefrigerador extends Refrigerador{
     
 
-    public PhilipsRefrigerador(String modelo, String numSerie, String estado, double precio,double capacidad, boolean dispensadorAgua, boolean dispensadorHielo, boolean alarmaPuertaAbierta) {
+    public PhilipsRefrigerador(String modelo, String numSerie, String estado, int precio,double capacidad, boolean dispensadorAgua, boolean dispensadorHielo, boolean alarmaPuertaAbierta) {
         this.marca = "Philips";
         this.modelo=modelo;
         this.numSerie=numSerie;

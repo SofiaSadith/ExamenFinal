@@ -14,7 +14,7 @@ public class LgLavadora extends Lavadora{
     
     
     
-    public LgLavadora(String modelo, String numSerie, String estado, double precio, double capacidad, boolean panel, int numProgramas){
+    public LgLavadora(String modelo, String numSerie, String estado, int precio, double capacidad, boolean panel, int numProgramas){
         this.marca="LG";
         this.modelo=modelo;
         this.numSerie=numSerie;

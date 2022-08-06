@@ -11,7 +11,7 @@ package models;
 public class SamsungRefrigerador extends Refrigerador{
     
 
-    public SamsungRefrigerador(String modelo, String numSerie, String estado, double precio,double capacidad, boolean dispensadorAgua, boolean dispensadorHielo, boolean alarmaPuertaAbierta) {
+    public SamsungRefrigerador(String modelo, String numSerie, String estado, int precio,double capacidad, boolean dispensadorAgua, boolean dispensadorHielo, boolean alarmaPuertaAbierta) {
         this.marca = "Samsung";
         this.modelo=modelo;
         this.numSerie=numSerie;

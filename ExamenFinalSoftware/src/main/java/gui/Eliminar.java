@@ -4,6 +4,10 @@
  */
 package gui;
 
+import baseDatos.ConsultaSql;
+import javax.swing.JOptionPane;
+import javax.swing.table.DefaultTableModel;
+
 /**
  *
  * @author Sofia Poma
@@ -13,8 +17,19 @@ public class Eliminar extends javax.swing.JFrame {
     /**
      * Creates new form Eliminar
      */
+    DefaultTableModel model = new DefaultTableModel();
+    ConsultaSql cons = new ConsultaSql();
     public Eliminar() {
         initComponents();
+        model.addColumn("marca");
+        model.addColumn("modelo");
+        model.addColumn("nroSerie");
+        model.addColumn("precio");
+        model.addColumn("estado");
+        jTable1.setModel(model);
+        cons.consultar(model);
+        jTable1.setModel(model);
+        model.fireTableDataChanged();
     }
 
     /**
@@ -113,6 +128,12 @@ public class Eliminar extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
+        int fila = jTable1.getSelectedRow();
+        if(fila >=0){
+            model.removeRow(fila);
+        }else{
+            JOptionPane.showMessageDialog(null, "Seleccionar fila");
+        }
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed

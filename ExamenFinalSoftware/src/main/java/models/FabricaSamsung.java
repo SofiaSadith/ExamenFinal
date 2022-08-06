@@ -11,31 +11,31 @@ package models;
 public class FabricaSamsung implements FabricaElectrodomestico{
 
     @Override
-    public Lavadora crearLavadora(String modelo, String numSerie, String estado, double precio, double capacidad, boolean panel, int numProgramas) {
+    public Lavadora crearLavadora(String modelo, String numSerie, String estado, int precio, double capacidad, boolean panel, int numProgramas) {
          return (Lavadora) new SamsungLavadora(modelo, numSerie, estado, precio, capacidad, panel, numProgramas);
     }
 
     @Override
-    public Licuadora crearLicuadora(String modelo, String numSerie, String estado, double precio, int velocidades, double potencia, String tipoVaso, boolean picaHielo) {
+    public Licuadora crearLicuadora(String modelo, String numSerie, String estado, int precio, int velocidades, double potencia, String tipoVaso, boolean picaHielo) {
         return (Licuadora) new SamsungLicuadora(modelo, numSerie, estado, precio, velocidades, potencia, tipoVaso, picaHielo);
     }
     @Override
-    public Microondas crearMicroondas(String modelo, String numSerie, String estado, double precio,double capacidad, boolean panel, double potencia, boolean funcionGrill, boolean reloj, boolean cronometro){
+    public Microondas crearMicroondas(String modelo, String numSerie, String estado, int precio,double capacidad, boolean panel, double potencia, boolean funcionGrill, boolean reloj, boolean cronometro){
         return (Microondas) new SamsungMicroondas(modelo, numSerie, estado, precio, capacidad, panel, potencia, funcionGrill, reloj, cronometro);
     }
 
     @Override
-    public Refrigerador crearRefrigerador(String modelo, String numSerie, String estado, double precio, double capacidad, boolean dispensadorAgua, boolean dispensadorHielo, boolean alarmaPuertaAbierta) {
+    public Refrigerador crearRefrigerador(String modelo, String numSerie, String estado, int precio, double capacidad, boolean dispensadorAgua, boolean dispensadorHielo, boolean alarmaPuertaAbierta) {
         return (Refrigerador) new SamsungRefrigerador(modelo, numSerie, estado, precio, capacidad, dispensadorAgua, dispensadorHielo, alarmaPuertaAbierta);
     }
 
     @Override
-    public Stereo crearStereo(String modelo, String numSerie, String estado, double precio, int numUsb, int numParlantes, boolean karaoke, boolean ecualizador) {
+    public Stereo crearStereo(String modelo, String numSerie, String estado, int precio, int numUsb, int numParlantes, boolean karaoke, boolean ecualizador) {
         return (Stereo) new SamsungStereo(modelo, numSerie, estado, precio, numUsb, numParlantes, karaoke, ecualizador);
     }
 
     @Override
-    public Televisor crearTelevisor(String modelo, String numSerie, String estado, double precio, boolean bluetooth, boolean wifi, boolean controlVoz) {
+    public Televisor crearTelevisor(String modelo, String numSerie, String estado, int precio, boolean bluetooth, boolean wifi, boolean controlVoz) {
         return (Televisor) new SamsungTelevisor(modelo, numSerie, estado, precio, bluetooth, wifi, controlVoz);
     }
 }

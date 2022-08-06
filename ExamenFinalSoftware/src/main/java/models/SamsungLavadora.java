@@ -11,7 +11,7 @@ package models;
 public class SamsungLavadora extends Lavadora{
     
 
-    public SamsungLavadora(String modelo, String numSerie, String estado, double precio, double capacidad, boolean panel, int numProgramas) {
+    public SamsungLavadora(String modelo, String numSerie, String estado, int precio, double capacidad, boolean panel, int numProgramas) {
         this.marca="Samsung";
         this.modelo=modelo;
         this.numSerie=numSerie;

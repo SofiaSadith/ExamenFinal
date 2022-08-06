@@ -11,7 +11,7 @@ package models;
 public class PhilipsLavadora extends Lavadora{
    
     
-    public PhilipsLavadora(String modelo, String numSerie, String estado, double precio, double capacidad, boolean panel, int numProgramas){
+    public PhilipsLavadora(String modelo, String numSerie, String estado, int precio, double capacidad, boolean panel, int numProgramas){
         this.marca="Philips";
         this.modelo=modelo;
         this.numSerie=numSerie;

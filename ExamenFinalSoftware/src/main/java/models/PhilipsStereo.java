@@ -11,7 +11,7 @@ package models;
 public class PhilipsStereo extends Stereo{
    
 
-    public PhilipsStereo( String modelo, String numSerie, String estado, double precio, int numUsb, int numParlantes, boolean karaoke, boolean ecualizador) {
+    public PhilipsStereo( String modelo, String numSerie, String estado, int precio, int numUsb, int numParlantes, boolean karaoke, boolean ecualizador) {
         this.marca="Philps";
         this.modelo=modelo;
         this.numSerie=numSerie;

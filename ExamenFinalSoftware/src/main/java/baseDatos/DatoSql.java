@@ -9,9 +9,11 @@ package baseDatos;
  * @author skynetgaming
  */
 public class DatoSql {
+    public String marca;
+    public String modelo;
     private String numeroSerie;
-    private String nombre;
-    private String descripcion;
+    public double precio;
+    public String estado;
     
     /*
     public DatoSql(String numeroSerie, String nombre, String descripcion) {
@@ -27,24 +29,15 @@ public class DatoSql {
 
     public void setNumeroSerie(String numeroSerie) {
         this.numeroSerie = numeroSerie;
-    }
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public String getDescripcion() {
-        return descripcion;
-    }
-
-    public void setDescripcion(String descripcion) {
-        this.descripcion = descripcion;
+    }   
+    
+    public String getNombre(){
+        return marca+"-"+modelo;
     }
     
+     public String getDescripcion(){
+        return modelo+"-"+numeroSerie;
+    }
     
     
 }

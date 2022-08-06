@@ -11,7 +11,7 @@ package models;
 public class PhilipsMicroondas extends Microondas{
     
 
-    public PhilipsMicroondas(String modelo, String numSerie, String estado, double precio,double capacidad, boolean panel, double potencia, boolean funcionGrill, boolean reloj, boolean cronometro) {
+    public PhilipsMicroondas(String modelo, String numSerie, String estado, int precio,double capacidad, boolean panel, double potencia, boolean funcionGrill, boolean reloj, boolean cronometro) {
         this.marca="Philips";
         this.modelo=modelo;
         this.numSerie=numSerie;

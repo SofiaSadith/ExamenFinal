@@ -16,7 +16,7 @@ public abstract class Electrodomestico {
     String modelo;
     String numSerie;
     String estado;
-    Double precio;
+    int precio;
     boolean descuento;
     
     State state;
@@ -45,7 +45,7 @@ public abstract class Electrodomestico {
         return estado;
     }
 
-    public Double getPrecio() {
+    public int getPrecio() {
         return precio;
     }
     public boolean getDescuento() {

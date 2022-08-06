@@ -11,7 +11,7 @@ package models;
 public class LgRefrigerador extends Refrigerador{
     
 
-    public LgRefrigerador(String modelo, String numSerie, String estado, double precio,double capacidad, boolean dispensadorAgua, boolean dispensadorHielo, boolean alarmaPuertaAbierta) {
+    public LgRefrigerador(String modelo, String numSerie, String estado, int precio,double capacidad, boolean dispensadorAgua, boolean dispensadorHielo, boolean alarmaPuertaAbierta) {
         this.marca = "LG";
         this.modelo=modelo;
         this.numSerie=numSerie;

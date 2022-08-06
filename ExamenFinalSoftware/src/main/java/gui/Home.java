@@ -122,7 +122,7 @@ public class Home extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        int resp=JOptionPane.showConfirmDialog(this,"¿Quieres salir?","Salir",JOptionPane.YES_NO_OPTION,JOptionPane.QUESTION_MESSAGE);
+        int resp=JOptionPane.showConfirmDialog(this,"¿Seguro que uieres salir?","Salir",JOptionPane.YES_NO_OPTION,JOptionPane.QUESTION_MESSAGE);
         if (0==resp){
             this.dispose();
         }

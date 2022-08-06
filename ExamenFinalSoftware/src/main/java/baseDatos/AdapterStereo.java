@@ -11,7 +11,7 @@ import models.Stereo;
 
 /**
  *
- * @author skynetgaming
+ * @author BrunoCipriano
  */
 public class AdapterStereo extends DatoSql{
     private final LgStereo stereo1;

@@ -11,7 +11,7 @@ import models.SamsungRefrigerador;
 
 /**
  *
- * @author skynetgaming
+ * @author BrunoCipriano
  */
 public class AdapterRefrigerador extends DatoSql{
     private final LgRefrigerador refrigerador1;

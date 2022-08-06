@@ -11,7 +11,7 @@ import models.SamsungMicroondas;
 
 /**
  *
- * @author skynetgaming
+ * @author BrunoCipriano
  */
 public class AdapterMicroondas extends DatoSql{
     private final LgMicroondas microondas1;

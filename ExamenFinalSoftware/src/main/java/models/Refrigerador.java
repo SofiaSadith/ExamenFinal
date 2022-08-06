@@ -6,7 +6,7 @@ package models;
 
 /**
  *
- * @author skynetgaming
+ * @author BrunoCipriano
  */
 public abstract class Refrigerador extends Electrodomestico{
     double capacidad;

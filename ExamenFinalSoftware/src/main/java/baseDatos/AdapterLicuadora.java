@@ -11,7 +11,7 @@ import models.SamsungLicuadora;
 
 /**
  *
- * @author skynetgaming
+ * @author BrunoCipriano
  */
 public class AdapterLicuadora extends DatoSql{
     private final LgLicuadora licuadora1;

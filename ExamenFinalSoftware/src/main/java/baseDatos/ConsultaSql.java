@@ -13,7 +13,7 @@ import models.Electrodomestico;
 
 /**
  *
- * @author skynetgaming
+ * @author BrunoCipriano
  */
 public class ConsultaSql {
 

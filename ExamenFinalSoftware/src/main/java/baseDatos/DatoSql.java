@@ -6,7 +6,7 @@ package baseDatos;
 
 /**
  *
- * @author skynetgaming
+ * @author BrunoCipriano
  */
 public class DatoSql {
     public String marca;

@@ -11,7 +11,7 @@ import models.Televisor;
 
 /**
  *
- * @author skynetgaming
+ * @author BrunoCipriano
  */
 public class AdapterTelevisor extends DatoSql{
     private final LgTelevisor televisor1;

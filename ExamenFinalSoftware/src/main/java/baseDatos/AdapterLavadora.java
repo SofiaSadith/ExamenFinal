@@ -12,7 +12,7 @@ import models.SamsungLavadora;
 
 /**
  *
- * @author skynetgaming
+ * @author BrunoCipriano
  */
 public class AdapterLavadora extends DatoSql{
     private final LgLavadora lavadora1;

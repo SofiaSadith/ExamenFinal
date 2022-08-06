@@ -6,7 +6,7 @@ package models;
 
 /**
  *
- * @author skynetgaming
+ * @author BrunoCipriano
  */
 public class SamsungRefrigerador extends Refrigerador{
     
